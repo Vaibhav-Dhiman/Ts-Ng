@@ -1,10 +1,7 @@
-function combine(input1, input2) {
-    var result;
-    if (typeof input1 === 'number' && typeof input2 === 'number')
-        result = input1 + input2;
-    else
-        result = input1.toString() + input2.toString();
-    return result;
+function add(n1, n2) {
+    return n1 + n2;
 }
-var combineAges = combine(20, 'vaibhav');
-console.log(combineAges);
+function printResult(num) {
+    console.log("result" + num);
+}
+printResult(add(23, 45));

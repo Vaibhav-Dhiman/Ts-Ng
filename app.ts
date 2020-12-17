@@ -1,11 +1,17 @@
-function combine(input1: number | string, input2: number | string) {
-   let result;
-   if(typeof input1 === 'number' && typeof input2 === 'number')
-        result = input1 + input2;
-    else 
-        result = input1.toString() + input2.toString();
-    return result;
+function add(n1:number, n2:number): number {
+    return n1+n2;
 }
 
-const combineAges = combine(20,'vaibhav');
-console.log(combineAges);
+function printResult(num:number) {
+    console.log("result" + num);
+}
+
+function addHandler(n1: number, n2: number) {
+    const res = n1+n2;
+    
+}
+
+let combineValues : (a: number, b: number) => number;
+
+
+printResult(add(23,45))
