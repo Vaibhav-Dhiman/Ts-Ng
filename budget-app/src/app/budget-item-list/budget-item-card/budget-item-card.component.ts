@@ -10,6 +10,7 @@ export class BudgetItemCardComponent implements OnInit {
 
   @Input() item: BudgetItem;
   @Output() xButtonCliked: EventEmitter<any> =  new EventEmitter<any>();
+  @Output() cardClick: EventEmitter<any> = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit() {
@@ -17,6 +18,10 @@ export class BudgetItemCardComponent implements OnInit {
 
   onxButtonClicked() {
     this.xButtonCliked.emit();
+  }
+
+  onCardClick() {
+    this.cardClick.emit();
   }
 
 }
